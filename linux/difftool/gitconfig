@@ -1,0 +1,18 @@
+[user]
+	email = hnywolf@gmail.com
+	name = wenqi
+[merge]
+    tool = p4merge
+[mergetool "p4merge"]
+    prompt = false
+    keepBackup = false
+    keepTemporaries = false
+    cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+    trustExitCode = true
+
+[diff]
+	tool = p4mergetool
+[difftool "p4merge"]
+    prompt = false
+    cmd = p4merge "$LOCAL" "$REMOTE"
+
